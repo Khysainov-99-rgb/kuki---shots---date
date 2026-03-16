@@ -1,0 +1,41 @@
+name: Collect KHL/NHL Data
+
+on:
+  schedule:
+    # Запуск каждый день в 10:00 и 22:00 по Москве (UTC+3)
+    - cron: '0 7 * * *'   # 10:00 МСК (07:00 UTC)
+    - cron: '0 19 * * *'  # 22:00 МСК (19:00 UTC)
+  workflow_dispatch:  # Возможность ручного запуска
+
+jobs:
+  collect-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Разрешаем запись в репозиторий
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 pandas
+      
+      - name: Create logs directory
+        run: mkdir -p logs
+      
+      - name: Log collection start
+        run: echo "Data collection started at $(date)" >> logs/collection.log
+      
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "KUKI Bot"
+          git config --global user.email "kuki-bot@users.noreply.github.com"
+          git add logs/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update logs $(date)"
+          git push
