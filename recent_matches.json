@@ -1,3 +1,37 @@
 {
-  "matches": []
+  "matches": [
+    {
+      "date": "2026-03-17",
+      "league": "KHL",
+      "home": "Ак Барс",
+      "away": "Салават Юлаев",
+      "home_shots": 35,
+      "away_shots": 28,
+      "result": "4:2",
+      "status": "completed",
+      "source": "test_data"
+    },
+    {
+      "date": "2026-03-17",
+      "league": "NHL",
+      "home": "Нью-Йорк Рейнджерс",
+      "away": "Бостон Брюинз",
+      "home_shots": 32,
+      "away_shots": 28,
+      "result": "4:3 ОТ",
+      "status": "completed",
+      "source": "test_data"
+    },
+    {
+      "date": "2026-03-17",
+      "league": "NHL",
+      "home": "Торонто Мэйпл Лифс",
+      "away": "Монреаль Канадиенс",
+      "home_shots": 35,
+      "away_shots": 31,
+      "result": "5:2",
+      "status": "completed",
+      "source": "test_data"
+    }
+  ]
 }

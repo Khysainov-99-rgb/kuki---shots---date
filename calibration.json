@@ -1,33 +1,108 @@
 {
-  "last_updated": "2026-03-16",
+  "last_updated": "2026-03-17 11:24:07",
   "teams": {
-    "Ак Барс": {"shots_avg": 42.0, "matches": 2},
-    "Амур": {"shots_avg": 37.5, "matches": 2},
-    "Адмирал": {"shots_avg": 33.7, "matches": 3},
-    "Автомобилист": {"shots_avg": 30.0, "matches": 2},
-    "Барыс": {"shots_avg": 34.5, "matches": 2},
-    "Динамо М": {"shots_avg": 33.0, "matches": 1},
-    "Динамо Мн": {"shots_avg": 29.5, "matches": 2},
-    "Драконы": {"shots_avg": 33.5, "matches": 2},
-    "Локомотив": {"shots_avg": 29.0, "matches": 2},
-    "Металлург Мг": {"shots_avg": 35.0, "matches": 1},
-    "Нефтехимик": {"shots_avg": 43.7, "matches": 3},
-    "Северсталь": {"shots_avg": 28.5, "matches": 2},
-    "Сибирь": {"shots_avg": 25.4, "matches": 2},
-    "СКА": {"shots_avg": 31.0, "matches": 1},
-    "Спартак": {"shots_avg": 36.0, "matches": 1},
-    "Торпедо": {"shots_avg": 34.0, "matches": 2},
-    "Трактор": {"shots_avg": 34.0, "matches": 1},
-    "ЦСКА": {"shots_avg": 27.9, "matches": 2}
+    "Ак Барс": {
+      "shots_avg": 39.7,
+      "matches": 3
+    },
+    "Амур": {
+      "shots_avg": 37.5,
+      "matches": 2
+    },
+    "Адмирал": {
+      "shots_avg": 33.7,
+      "matches": 3
+    },
+    "Автомобилист": {
+      "shots_avg": 30.0,
+      "matches": 2
+    },
+    "Барыс": {
+      "shots_avg": 34.5,
+      "matches": 2
+    },
+    "Динамо М": {
+      "shots_avg": 33.0,
+      "matches": 1
+    },
+    "Динамо Мн": {
+      "shots_avg": 29.5,
+      "matches": 2
+    },
+    "Драконы": {
+      "shots_avg": 33.5,
+      "matches": 2
+    },
+    "Локомотив": {
+      "shots_avg": 29.0,
+      "matches": 2
+    },
+    "Металлург Мг": {
+      "shots_avg": 35.0,
+      "matches": 1
+    },
+    "Нефтехимик": {
+      "shots_avg": 43.7,
+      "matches": 3
+    },
+    "Северсталь": {
+      "shots_avg": 28.5,
+      "matches": 2
+    },
+    "Сибирь": {
+      "shots_avg": 25.4,
+      "matches": 2
+    },
+    "СКА": {
+      "shots_avg": 31.0,
+      "matches": 1
+    },
+    "Спартак": {
+      "shots_avg": 36.0,
+      "matches": 1
+    },
+    "Торпедо": {
+      "shots_avg": 34.0,
+      "matches": 2
+    },
+    "Трактор": {
+      "shots_avg": 34.0,
+      "matches": 1
+    },
+    "ЦСКА": {
+      "shots_avg": 27.9,
+      "matches": 2
+    },
+    "Салават Юлаев": {
+      "shots_avg": 28.0,
+      "matches": 1
+    },
+    "Нью-Йорк Рейнджерс": {
+      "shots_avg": 32.0,
+      "matches": 1
+    },
+    "Бостон Брюинз": {
+      "shots_avg": 28.0,
+      "matches": 1
+    },
+    "Торонто Мэйпл Лифс": {
+      "shots_avg": 35.0,
+      "matches": 1
+    },
+    "Монреаль Канадиенс": {
+      "shots_avg": 31.0,
+      "matches": 1
+    }
   },
   "models_weights": {
     "poisson_mc": 0.187,
     "lightgbm": 0.147,
-    "xgboost": 0.140,
-    "neuralnet": 0.140,
+    "xgboost": 0.14,
+    "neuralnet": 0.14,
     "elo": 0.153,
-    "logistic": 0.130,
+    "logistic": 0.13,
     "dixon_coles": 0.128
   },
-  "recent_matches": []
+  "recent_matches": [],
+  "total_teams": 23
 }

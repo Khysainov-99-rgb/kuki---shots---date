@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-03-17",
+    "league": "KHL",
+    "home": "Ак Барс",
+    "away": "Салават Юлаев",
+    "home_shots": 35,
+    "away_shots": 28,
+    "result": "4:2",
+    "status": "completed",
+    "source": "test_data"
+  },
+  {
+    "date": "2026-03-17",
+    "league": "KHL",
+    "home": "Металлург Мг",
+    "away": "Автомобилист",
+    "home_shots": 0,
+    "away_shots": 0,
+    "result": "не начался",
+    "status": "scheduled",
+    "source": "test_data"
+  }
+]
