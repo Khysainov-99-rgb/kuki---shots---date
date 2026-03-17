@@ -22,3 +22,11 @@
 2026-03-17 13:00:46,620 - analytics_collector - INFO - Собрано коэффициентов по 2 матчам
 2026-03-17 13:00:46,620 - analytics_collector - INFO - Аналитика сохранена в data/analytics/2026-03-17.json
 2026-03-17 13:00:46,621 - analytics_collector - INFO - ✅ Сбор аналитики успешно завершён
+2026-03-17 13:17:59,689 - analytics_collector - INFO - Директории созданы: data/analytics
+2026-03-17 13:17:59,689 - analytics_collector - INFO - ==================================================
+2026-03-17 13:17:59,689 - analytics_collector - INFO - ЗАПУСК СБОРА АНАЛИТИКИ
+2026-03-17 13:17:59,690 - analytics_collector - INFO - ==================================================
+2026-03-17 13:17:59,690 - analytics_collector - INFO - Собрано 3 прогнозов экспертов
+2026-03-17 13:17:59,690 - analytics_collector - INFO - Собрано коэффициентов по 2 матчам
+2026-03-17 13:17:59,690 - analytics_collector - INFO - Аналитика сохранена в data/analytics/2026-03-17.json
+2026-03-17 13:17:59,690 - analytics_collector - INFO - ✅ Сбор аналитики успешно завершён
