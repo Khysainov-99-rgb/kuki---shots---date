@@ -1,9 +1,9 @@
-import json
-import os
+import sys
 
 def update_calibration():
-    """Обновление калибровки (тест)"""
-    print("✅ Calibration update completed")
+    print("🚀 Запуск update_calibration.py")
+    print("✅ Calibration update completed (test mode)")
+    return 0
 
 if __name__ == "__main__":
-    update_calibration()
+    sys.exit(update_calibration())
