@@ -59,19 +59,22 @@ jobs:
           mkdir -p backups/$TIMESTAMP
           cp -r data/* backups/$TIMESTAMP/ 2>/dev/null || true
       
-      - name: Pull latest changes
-        run: |
-          git pull --rebase origin main
-      
-      - name: Commit and push changes
+      - name: Commit local changes
         run: |
           git config --global user.name "KUKI Bot"
           git config --global user.email "kuki-bot@users.noreply.github.com"
           git add data/ logs/ recent_matches.json calibration.json
-          TIMESTAMP=$(date +'%Y-%m-%d %H:%M')
           if ! git diff --quiet && git diff --staged --quiet; then
-            git commit -m "Auto-update ${TIMESTAMP}"
-            git push
+            git commit -m "Auto-update data"
+            echo "✅ Локальные изменения закоммичены"
           else
-            echo "Нет изменений для коммита"
+            echo "ℹ️ Нет локальных изменений для коммита"
           fi
+      
+      - name: Pull latest changes
+        run: |
+          git pull --rebase origin main || echo "ℹ️ Не удалось выполнить pull, продолжаем"
+      
+      - name: Push changes
+        run: |
+          git push || echo "ℹ️ Не удалось выполнить push, возможно нет изменений"
