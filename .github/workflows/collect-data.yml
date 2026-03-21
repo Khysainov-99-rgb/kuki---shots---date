@@ -35,7 +35,7 @@ jobs:
       
       - name: Create directories
         run: |
-          mkdir -p data/khl data/nhl data/analytics data/odds logs backups
+          mkdir -p data/khl data/nhl data/nba data/analytics data/odds logs backups
       
       - name: Collect KHL data
         run: |
@@ -44,6 +44,10 @@ jobs:
       - name: Collect NHL data
         run: |
           python .github/scripts/collect_nhl.py
+      
+      - name: Collect NBA data
+        run: |
+          python .github/scripts/collect_nba.py
       
       - name: Collect analytics and predictions
         run: |
